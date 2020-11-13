@@ -41,11 +41,11 @@ if ($_GET['id']) {
 <body>
 
 <fieldset>
-   <legend>Update Library</legend>
+   <legend class="bg-info text-white">Update Library</legend>
 
    <form action="actions/a_update.php" method="post" enctype="multipart/form-data">
        <table  class="table table-bordered bg-dark text-white w-100">
-           <tr class="bg-info text-white">
+           <tr class="text-white">
                <th>Image</th >
                <td><input type="text"  name="image" value="<?php echo $data['image'] ?>"  /></td>
            </tr >    

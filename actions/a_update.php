@@ -36,7 +36,7 @@ if ($_POST) {
 
    $sql = "UPDATE library SET image = '$image', type = '$type', title = '$title', author = '$author', description = '$description', publisher = '$publisher', publish_date = '$publish_date', publish_address = '$publish_address', ISBN_code = '$ISBN_code' WHERE libraryId = {$id}" ;
    if($connect->query($sql) === TRUE) {
-       echo  "<p>Successfully Updated</p>";
+       echo  "<h3>Successfully Updated</h3>";
        echo "<a href='../update.php?id=" .$id."'><button type='button' class='btn btn-info m-3'>Back</button></a>";
        echo  "<a href='../index.php'><button type='button' class='btn btn-info m-3'>Home</button></a>";
    } else {
